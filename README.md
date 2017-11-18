@@ -24,12 +24,18 @@ Experimento de criação de uma `aplicação que contada o fluxo de pessoas em um am
 
 * Montar o hardware conforme a imagem em `...documentacao\arquiteturaDaAplicacao.png`
 
-### Com os Pré-requisitos atendidos, basta apenas fazer o upload do codigo (contadorPessoa.ino) para a placa NodeMCU via Arduino IDE.
+### Dica sobre possiveis problemas (não conectar) com a rede WI-FI ao subir a aplicação:
+ * verifique se o FIREWALL estar desligado;
+ * Nas propriedades da rede no tópico `deixar o computado detectavel` deve estar como `ATIVADO`;
+ * Verifique no codigo `ContadorPessoas.ino` em `Configuração do Wi-FI` se a configuração está compativel com o seu WI-FI;
+ * Verifique no codigo `ContadorPessoas.ino` em `Configuração do mqtt` se a configuração do MQTT está preenchida de maneira correta (ip, porta, etc).
+ 
+
+### Com os Pré-requisitos atendidos
+
+Popule as variaveis de `configuração do WI-FI` com os dados do seu WI-FI e popular as variaveis de `Configuração do mqtt` os dados do MQTT que você instalou, com isso feito, basta fazer o upload do codigo (contadorPessoa.ino) para a placa NodeMCU via Arduino IDE.
  
  
-### Acesse o link para baixar e executar a API Java
-
-
 ### Para este projeto também foi desenvolvida uma aplicação Web Responsiva para apresentar os dados coletados do MQTT.  
 
 link aqui...
