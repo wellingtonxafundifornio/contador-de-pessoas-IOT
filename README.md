@@ -38,7 +38,7 @@ Popule as variaveis de `configuração do WI-FI` com os dados do seu WI-FI e popul
  
 ### Para este projeto também foi desenvolvida uma aplicação Web Responsiva para apresentar os dados coletados do MQTT.  
 
-link aqui...
+https://github.com/wellingtonxafundifornio/contador-de-pessoas-client-web.git
 
 ### Fazendo um breve resumo sobre a aplicação
 
