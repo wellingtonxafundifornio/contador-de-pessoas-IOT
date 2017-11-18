@@ -7,23 +7,22 @@ Experimento de criação de uma `aplicação que contada o fluxo de pessoas em um am
 `...documentacao\` Tem imagens da `arquitetura do projeto`, `sensor` e a`placa usada`.
 
 ## Pré-requisitos para subir este projeto
-..* Placa `NodeMCU ESP8266 e sensores`. Para mais detalhes, olhe a imgem "arquiteturaDaAplicacao.png", dentro da pasta "documentação";
+ * Placa `NodeMCU ESP8266 e sensores`. Para mais detalhes, olhe a imgem "arquiteturaDaAplicacao.png", dentro da pasta "documentação";
 
-..* Ter a IDE do Arduino instalada;
+ * Ter a IDE do Arduino instalada;
 
-..* Adicionar as seguintes bibliotecas á IDE do Arduino:
-....* `#include <ESP8266WiFi.h>`
-....* `#include <PubSubClient.h>`
+ * Adicionar as seguintes bibliotecas á IDE do Arduino:
+    * `#include <ESP8266WiFi.h>`
+    * `#include <PubSubClient.h>`
 
-..* Ter o `MQTT Mosquitto` instalado! Segue é o link que usei para instalar e  configurar
-o MQTT no Windows: https://www.youtube.com/watch?v=Y7NE-TpSwUw 
+* Ter o `MQTT Mosquitto` instalado! Segue é o link que usei para instalar e  configurar o MQTT no Windows: https://www.youtube.com/watch?v=Y7NE-TpSwUw 
 
-..* Dica para subir e testar o MQTT após a instalação
-....* Abra o terminal (CMD, PRONPT, SHELL) como `Administrador` e entre no diretório do MQTT `C:\Program Files (x86)\mosquitto>`;
-....* Suba um subscrib para escutar tudo que chega no MQTT `mosquitto_sub -h COLOQUE_SEU_IP -u NOMEI_UM_USUARIO -P INFORME_UMA_SENHA -t "#"`;
-....* Suba um publish para publicar dados no MQTT `mosquitto_pub -h COLOQUE_SEU_IP -u USUARIO_NOMEADO -P SENHA_INFORMADA -t "DIGITE_UM_TOPICO" -m "Informe a mensagem a ser enviada. Hello World"` .
+* Dica para subir e testar o MQTT após a instalação
+    * Abra o terminal (CMD, PRONPT, SHELL) como `Administrador` e entre no diretório do MQTT `C:\Program Files (x86)\mosquitto>`;
+    * Suba um subscrib para escutar tudo que chega no MQTT `mosquitto_sub -h COLOQUE_SEU_IP -u NOMEI_UM_USUARIO -P INFORME_UMA_SENHA -t "#"`;
+    * Suba um publish para publicar dados no MQTT `mosquitto_pub -h COLOQUE_SEU_IP -u USUARIO_NOMEADO -P SENHA_INFORMADA -t "DIGITE_UM_TOPICO" -m "Informe a mensagem a ser enviada. Hello World"` .
 
-..* Montar o hardware conforme a imagem em `...documentacao\arquiteturaDaAplicacao.png`
+* Montar o hardware conforme a imagem em `...documentacao\arquiteturaDaAplicacao.png`
 
 ### Com os Pré-requisitos atendidos, basta apenas fazer o upload do codigo (contadorPessoa.ino) para a placa NodeMCU via Arduino IDE.
  
